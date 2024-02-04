@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghulla</title>
+    <!--Tailwind and daisy ui cdn-->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- css -->
+<link rel="stylesheet" href="style.css">
+
+<!--tailwind  customs classes-->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#FF00D8',
+            'bike-primary-bg':'#FFC0D9'
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="" >
+
+    <nav class="navber rounded-2xl">
+        <div class="navbar bg-blue-200 lg:pr-20 lg:pl-20 mb-5">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a href="index.html">যুবক কালেকশন</a></li>
+                  
+                      <li><a href="coast.html">খরচের তালিকা</a></li>
+                   
+                      <li><a href="contract.html">যোগাযোগ</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">Jakariya</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+
+                <li><a href="index.html">যুবক কালেকশন</a></li>
+                  <li><a href="coast.html">খরচের তালিকা</a></li>
+                   <li><a href="contract.html">যোগাযোগ</a></li>
+
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <img class="w-[40px]" src="img/jk2.png" alt="Shoes" />
+            </div>
+          </div>
+    </nav>
+<!--  -->
+    <div class="carousel">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full " />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+<section>
+<div class="body-m">
+  <h1 class="text-center text-red-800 font-4xl"> মাহফিল ১৬ ফেব্রুয়ারী ২০২৪ </h1>
+    <h1 class="text-center font-extrabold">যুবক কালেকশন</h1>
+    
+
+    <div class="overflow-x-auto mb-5 mt-5">
+       
+        <table class="table table-xs table-pin-rows table-pin-cols bg-blue-200 ">
+          <thead class=" text-red-600 ">
+            <tr>
+              <th>S/L</th> 
+              <td>নাম</td>            
+              <td>পিতার নাম</td>    
+              <td>মোবাইল নং</td>       
+              <td>কালেকশন</td> 
+              <td>মোট টাকা</td>       
+             </tr>
+          </thead> 
+          <tbody  class"text-lime-600">
+            <tr>
+              <th>1</th> 
+              <td>কালাম</td>    <!-- name  -->
+              <td>ইছাহাক</td>   <!-- FAthers name -->
+              <td></td>          <!-- Mobile -->
+              <td>300+</td>      <!-- Taka+ -->
+              <td>300/-</td>    <!-- =Taka -->
+             
+            </tr>
+            <tr>
+              <th>2</th> 
+              <td>রেজাউল</td>      <!-- name  -->
+              <td>মোঃ আবুল</td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td>200+</td>     <!-- Taka+ -->
+              <td>200</td>    <!-- =Taka -->
+              
+              
+            </tr>
+            <tr>
+              <th>3</th> 
+              <td>নূর মোহাম্মাদ</td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td>01860182492</td>    <!-- Mobile -->
+              <td>400+</td>     <!-- Taka+ -->
+              <td>400</td>    <!-- =Taka -->
+              
+            </tr>
+            <tr>
+              <th>4</th> 
+              <td>জুয়েল রানা</td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td>01869256387</td>    <!-- Mobile -->
+              <td>100+</td>     <!-- Taka+ -->
+              <td>100</td>    <!-- =Taka -->
+             
+            </tr>
+            <tr>
+              <th>5</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+             
+            </tr>
+            <tr>
+              <th>6</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+            
+            </tr>
+            <tr>
+              <th>7</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+            
+            <tr>
+              <th>8</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+              
+            </tr>
+            <tr>
+              <th>9</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+            </tr>
+            <tr>
+              <th>10</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+            </tr>
+            <tr>
+              <th>11</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+             
+            </tr>
+            <tr>
+              <th>12</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka --> 
+              
+            </tr>
+            <tr>
+              <th>13</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+            
+            </tr>
+            <tr>
+              <th>14</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+              
+            </tr>
+            <tr>
+              <th>15</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+            
+            </tr>
+            <tr>
+              <th>16</th> 
+              <td></td>      <!-- name  -->
+              <td></td>     <!-- FAthers name -->
+              <td></td>    <!-- Mobile -->
+              <td></td>     <!-- Taka+ -->
+              <td></td>    <!-- =Taka -->
+               
+            </tr>
+            
+            <tr>
+                <th>17</th>
+                <td></td>      <!-- name  -->
+                <td></td>     <!-- FAthers name -->
+                <td></td>    <!-- Mobile -->
+                <td></td>     <!-- Taka+ -->
+                <td></td>    <!-- =Taka --> 
+             
+            </tr>
+           </tbody>
+          <tfoot>
+            <th></th>
+            <td class"md:hidden"></td>  
+            <td class"md:hidden"></td>  
+            <td class"md:hidden"></td>  
+            <td>Total Ammount=</td>    
+            <td>1000/-</td>    <!-- =Taka --> 
+         
+          </tfoot>
+        </table>
+      </div>
+</div>
+
+<h4>Last Update-05/02/2024</h4>
+
+<footer><div role="alert" class="alert alert-error">
+    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    <span>Not Share This Link</span>
+  </div></footer>
+</body>
+</html>
