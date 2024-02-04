@@ -23,11 +23,16 @@ body{
     -ms-border-radius:10px ;
     -o-border-radius:10px ;
 }
-.navber{
-   
-
+.navbar{
+   border-radius: 10px;
+   /* background: linear-gradient(90deg, rgba(169, 41, 114, 0.866) 0%, rgba(13, 0, 255, 0.55) 100%); */
+background-color: rgba(255, 255, 255, 0.521);
+box-shadow: 0 4px 8px 0 rgb(164, 202, 236), 0 6px 20px 0 rgb(209, 185, 185);
 }
-
+.banner{
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
 
 
 
